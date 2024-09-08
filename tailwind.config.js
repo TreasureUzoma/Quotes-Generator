@@ -1,18 +1,16 @@
-// tailwind.config.js
+/** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: [
-    './src/**/*.{js,jsx,ts,tsx}',
-  ],
-  theme: {
-    extend: {
-      fontFamily: {
-        poppins: ['Poppins', 'sans-serif'], 
-        anonpro: ['Anonymous Pro', 'sans-serif'], 
-      },
-      fontSize: {
-        '18px': '18px', 
-      },
+    content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
+    theme: {
+        extend: {
+            fontFamily: {
+                poppins: ["Poppins", "sans-serif"],
+                anonpro: ["Anonymous Pro", "sans-serif"]
+            },
+            fontSize: {
+                "18px": "18px"
+            }
+        }
     },
-  },
-  plugins: [],
+    plugins: []
 };

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
 function MainContent() {
-    const [quote, setQuote] = useState("Listen to what you know instead of what you fear.");
+    const [quote, setQuote] = useState("Tap 'Generate Quote' button to get started");
     const [quoteCount, setQuoteCount] = useState(1);
 
     const fetchNewQuote = async () => {
@@ -14,9 +14,8 @@ function MainContent() {
             console.error("Error fetching quote:", error);
         }
     };
-
     return (
-        <main className="flex items-center justify-center text-center font-poppins h-[94vh]">
+        <div className="flex font-poppins justify-center items-center h-[99vh] text-center">
             <div className="bg-white p-4 rounded-lg shadow-md w-[85%] max-w-md">
                 <h3 className="text-lg font-semibold text-[#111]">
                     Quote #<span>{quoteCount}</span>
@@ -31,7 +30,7 @@ function MainContent() {
                     Generate Quote
                 </button>
             </div>
-        </main>
+        </div>
     );
 }
 
